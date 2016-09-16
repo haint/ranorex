@@ -6627,6 +6627,20 @@ g2g5OIhIbugRZMPMhqYsiHECrRWw4wS7rPP4V2tKsIIZ6vsLAN7KFwD0vRdUwI4JTmKCG34LSCYc
 			capname="button">
 				/form[@wpfnative='True' and @name='mainWindow']//container[@automationid='DriversStackPanel']//button
 			</item>
+			<item
+			name="FirstCategory"
+			id="1edd0a99-0229-467f-adfd-404d491d9172"
+			searchtimeout="30000ms"
+			capname="container">
+				/form[@wpfnative='True' and @name='mainWindow']/element[@automationid='FirstCategory']/?/?/container
+			</item>
+			<item
+			name="GetMoreSupportLink"
+			id="c7db2c40-5146-4259-869c-d125ead354ff"
+			searchtimeout="30000ms"
+			capname="text">
+				/form[@wpfnative='True' and @name='mainWindow']//container[@automationid='contentManagementControl']//text[@automationid='GetMoreSupportTxt']
+			</item>
 			<basepath>
 				/form[@wpfnative='True' and @name='mainWindow']
 			</basepath>
