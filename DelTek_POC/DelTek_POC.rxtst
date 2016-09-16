@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testsuitedoc
+rxversion="6.0">
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<testsuite
+			name="DelTek_POC"
+			id="309b2ec2-8e9b-40b3-b2df-0d6f16849677"
+			reportfilename="%S_%Y%M%D_%T.rxlog"
+			reporttemplatefolder=""
+			placescreenshotsinfolder="True"
+			reportwriteinterval="30000ms"
+			reportcompress="False"
+			enabletracingscreenshots="True"
+			ReportTime="RelativeToTestSuiteStartTime"
+			TracingScreenshotMode="Foreground"
+			TracingScreenshotQuality="40"/>
+			<testcase
+			name="DelTek_POC"
+			id="61175572-092d-4c19-a3fd-bd0add609622"
+			reportlevel="Info;20"/>
+			<testcase
+			name="TestCase"
+			id="ae892a61-ae51-4bb4-b9de-0a202ad44b41"/>
+		</flatlistofchildren>
+		<childhierarchy>
+			<testsuite
+			name="DelTek_POC"
+			id="309b2ec2-8e9b-40b3-b2df-0d6f16849677">
+				<testcase
+				name="DelTek_POC"
+				id="61175572-092d-4c19-a3fd-bd0add609622">
+					<testcase
+					name="TestCase"
+					id="ae892a61-ae51-4bb4-b9de-0a202ad44b41"/>
+				</testcase>
+			</testsuite>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
+	<datasources/>
+	<testconfigurations
+	default="TestRun">
+		<testconfiguration
+		name="TestRun">
+			<testcase
+			id="61175572-092d-4c19-a3fd-bd0add609622"/>
+			<testcase
+			id="ae892a61-ae51-4bb4-b9de-0a202ad44b41"/>
+		</testconfiguration>
+	</testconfigurations>
+	<references/>
+</testsuitedoc>

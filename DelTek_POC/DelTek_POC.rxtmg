@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="6.0">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="DelTek_POC"
+      id="e1a12458-ece8-468c-9ec0-a01da2244d65"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="DelTek_POC"
+      id="e1a12458-ece8-468c-9ec0-a01da2244d65"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

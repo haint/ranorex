@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="DelTek_POCRepository"
+id="d4f4e210-bf6a-4d9b-a530-86a83a353ed8"
+rxversion="6.0">
+  <codegen
+  classname="DelTek_POCRepository"
+  namespace="DelTek_POC"/>
+  <rootfolder
+  name="Root"
+  id="5fdf545d-8175-4dfa-afd5-4019d1273998"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>
