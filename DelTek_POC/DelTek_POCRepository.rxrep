@@ -6620,6 +6620,13 @@ g2g5OIhIbugRZMPMhqYsiHECrRWw4wS7rPP4V2tKsIIZ6vsLAN7KFwD0vRdUwI4JTmKCG34LSCYc
 			capname="button">
 				/form[@wpfnative='True' and @name='mainWindow']/?/?/container[@automationid='TitleBar']/container[3]/button[2]
 			</item>
+			<item
+			name="InstallButton"
+			id="86368588-93ae-48c3-8877-81ce992004c2"
+			searchtimeout="30000ms"
+			capname="button">
+				/form[@wpfnative='True' and @name='mainWindow']//container[@automationid='DriversStackPanel']//button
+			</item>
 			<basepath>
 				/form[@wpfnative='True' and @name='mainWindow']
 			</basepath>
