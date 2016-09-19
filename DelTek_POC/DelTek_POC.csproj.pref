@@ -1,0 +1,12 @@
+﻿<Properties>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="DelTek_POCRepository.rxrep" />
+    <Element value="DelTek_POC.rxtst" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+  </Properties>
+</Properties>

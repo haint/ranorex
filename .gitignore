@@ -1,7 +1,3 @@
 bin
 obj
 Reports
-*.csproj.pref
-*.csproj.rxuser
-*.rxsln
-*.rxsln.pref
