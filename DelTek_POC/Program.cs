@@ -28,8 +28,8 @@ namespace DelTek_POC
         {
             // Uncomment the following 2 lines if you want to automate Windows apps
             // by starting the test executable directly
-            //if (Util.IsRestartRequiredForWinAppAccess)
-            //    return Util.RestartWithUiAccess();
+            if (Util.IsRestartRequiredForWinAppAccess)
+                return Util.RestartWithUiAccess();
 
             Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
             int error = 0;
