@@ -25,6 +25,11 @@ rxversion="6.0">
 			id="61175572-092d-4c19-a3fd-bd0add609622"
 			reportlevel="Info;20"/>
 			<testmodule
+			name="ValidateFailure"
+			id="7a142505-ed83-4687-aaee-7ef7146614b6"
+			ref="d20cf749-2514-4f18-9b2a-01a60f352342"
+			type="UserCode"/>
+			<testmodule
 			name="OpenDHS"
 			id="a0b1e50e-174e-4c86-bb87-0d6bb0b969e6"
 			ref="c539336e-e496-49c1-84cd-859e3e334ecb"
@@ -49,6 +54,9 @@ rxversion="6.0">
 						<testmodule
 						name="CloseDHS"
 						id="554a21a1-e719-4fbe-8820-e59a733cf3db"/>
+						<testmodule
+						name="ValidateFailure"
+						id="7a142505-ed83-4687-aaee-7ef7146614b6"/>
 					</testcase>
 				</testcase>
 			</testsuite>

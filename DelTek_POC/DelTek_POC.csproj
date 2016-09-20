@@ -100,6 +100,9 @@
       <DependentUpon>OpenDHS.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="TestModules\General\ValidateFailure.cs">
+      <id>5bf24553-c834-4d51-aade-74eca6bf7bbb</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
