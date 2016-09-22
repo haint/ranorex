@@ -30,6 +30,11 @@ namespace DelTek_POC
         DelTek_POCRepositoryFolders.TaskbarAppFolder _taskbar;
         DelTek_POCRepositoryFolders.StartAppFolder _start;
         DelTek_POCRepositoryFolders.DHS_FormAppFolder _dhs_form;
+        DelTek_POCRepositoryFolders.WindowsUpdateAppFolder _windowsupdate;
+        DelTek_POCRepositoryFolders.HardwareAndDevicesAppFolder _hardwareanddevices;
+        DelTek_POCRepositoryFolders.WindowsNetworkDiagnosticsAppFolder _windowsnetworkdiagnostics;
+        DelTek_POCRepositoryFolders.DHSArticleContentAreaAppFolder _dhsarticlecontentarea;
+        DelTek_POCRepositoryFolders.DHSMainWindowAppFolder _dhsmainwindow;
 
         /// <summary>
         /// Gets the singleton class instance representing the DelTek_POCRepository element repository.
@@ -49,6 +54,11 @@ namespace DelTek_POC
             _taskbar = new DelTek_POCRepositoryFolders.TaskbarAppFolder(this);
             _start = new DelTek_POCRepositoryFolders.StartAppFolder(this);
             _dhs_form = new DelTek_POCRepositoryFolders.DHS_FormAppFolder(this);
+            _windowsupdate = new DelTek_POCRepositoryFolders.WindowsUpdateAppFolder(this);
+            _hardwareanddevices = new DelTek_POCRepositoryFolders.HardwareAndDevicesAppFolder(this);
+            _windowsnetworkdiagnostics = new DelTek_POCRepositoryFolders.WindowsNetworkDiagnosticsAppFolder(this);
+            _dhsarticlecontentarea = new DelTek_POCRepositoryFolders.DHSArticleContentAreaAppFolder(this);
+            _dhsmainwindow = new DelTek_POCRepositoryFolders.DHSMainWindowAppFolder(this);
         }
 
 #region Variables
@@ -104,6 +114,51 @@ namespace DelTek_POC
         public virtual DelTek_POCRepositoryFolders.DHS_FormAppFolder DHS_Form
         {
             get { return _dhs_form; }
+        }
+
+        /// <summary>
+        /// The WindowsUpdate folder.
+        /// </summary>
+        [RepositoryFolder("640f37bf-e05e-4dc0-b013-c2ea88b71433")]
+        public virtual DelTek_POCRepositoryFolders.WindowsUpdateAppFolder WindowsUpdate
+        {
+            get { return _windowsupdate; }
+        }
+
+        /// <summary>
+        /// The HardwareAndDevices folder.
+        /// </summary>
+        [RepositoryFolder("525f2547-7ee7-43d8-b0a4-3eaf1a58ed86")]
+        public virtual DelTek_POCRepositoryFolders.HardwareAndDevicesAppFolder HardwareAndDevices
+        {
+            get { return _hardwareanddevices; }
+        }
+
+        /// <summary>
+        /// The WindowsNetworkDiagnostics folder.
+        /// </summary>
+        [RepositoryFolder("a8fc49d6-7239-4a61-b235-f041fc97b1c0")]
+        public virtual DelTek_POCRepositoryFolders.WindowsNetworkDiagnosticsAppFolder WindowsNetworkDiagnostics
+        {
+            get { return _windowsnetworkdiagnostics; }
+        }
+
+        /// <summary>
+        /// The DHSArticleContentArea folder.
+        /// </summary>
+        [RepositoryFolder("3e5beff7-2be4-4417-afa8-b9e02c5538ac")]
+        public virtual DelTek_POCRepositoryFolders.DHSArticleContentAreaAppFolder DHSArticleContentArea
+        {
+            get { return _dhsarticlecontentarea; }
+        }
+
+        /// <summary>
+        /// The DHSMainWindow folder.
+        /// </summary>
+        [RepositoryFolder("75c708f6-fc02-48c9-96f8-667252e1487d")]
+        public virtual DelTek_POCRepositoryFolders.DHSMainWindowAppFolder DHSMainWindow
+        {
+            get { return _dhsmainwindow; }
         }
     }
 
@@ -741,6 +796,8 @@ namespace DelTek_POC
             RepoItemInfo _installbuttonInfo;
             RepoItemInfo _firstcategoryInfo;
             RepoItemInfo _getmoresupportlinkInfo;
+            RepoItemInfo _keepyoursystemhealthyInfo;
+            RepoItemInfo _protectyourpcInfo;
 
             /// <summary>
             /// Creates a new DHS_Form  folder.
@@ -752,6 +809,8 @@ namespace DelTek_POC
                 _installbuttonInfo = new RepoItemInfo(this, "InstallButton", ".//container[@automationid='DriversStackPanel']//button", 30000, null, "86368588-93ae-48c3-8877-81ce992004c2");
                 _firstcategoryInfo = new RepoItemInfo(this, "FirstCategory", "element[@automationid='FirstCategory']/?/?/container", 30000, null, "1edd0a99-0229-467f-adfd-404d491d9172");
                 _getmoresupportlinkInfo = new RepoItemInfo(this, "GetMoreSupportLink", ".//container[@automationid='contentManagementControl']//text[@automationid='GetMoreSupportTxt']", 30000, null, "c7db2c40-5146-4259-869c-d125ead354ff");
+                _keepyoursystemhealthyInfo = new RepoItemInfo(this, "KeepYourSystemHealthy", ".//element[@automationid='SixthCategory']/button", 30000, null, "3455960c-4b82-4dd7-8fcc-0cba734daf6d");
+                _protectyourpcInfo = new RepoItemInfo(this, "ProtectYourPC", "element", 30000, null, "f78ef668-4c62-43c7-8452-805c8b493883");
             }
 
             /// <summary>
@@ -871,6 +930,644 @@ namespace DelTek_POC
                 get
                 {
                     return _getmoresupportlinkInfo;
+                }
+            }
+
+            /// <summary>
+            /// The KeepYourSystemHealthy item.
+            /// </summary>
+            [RepositoryItem("3455960c-4b82-4dd7-8fcc-0cba734daf6d")]
+            public virtual Ranorex.Button KeepYourSystemHealthy
+            {
+                get
+                {
+                    return _keepyoursystemhealthyInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The KeepYourSystemHealthy item info.
+            /// </summary>
+            [RepositoryItemInfo("3455960c-4b82-4dd7-8fcc-0cba734daf6d")]
+            public virtual RepoItemInfo KeepYourSystemHealthyInfo
+            {
+                get
+                {
+                    return _keepyoursystemhealthyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProtectYourPC item.
+            /// </summary>
+            [RepositoryItem("f78ef668-4c62-43c7-8452-805c8b493883")]
+            public virtual Ranorex.Unknown ProtectYourPC
+            {
+                get
+                {
+                    return _protectyourpcInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProtectYourPC item info.
+            /// </summary>
+            [RepositoryItemInfo("f78ef668-4c62-43c7-8452-805c8b493883")]
+            public virtual RepoItemInfo ProtectYourPCInfo
+            {
+                get
+                {
+                    return _protectyourpcInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WindowsUpdateAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("640f37bf-e05e-4dc0-b013-c2ea88b71433")]
+        public partial class WindowsUpdateAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _wutitleInfo;
+            RepoItemInfo _cancelInfo;
+
+            /// <summary>
+            /// Creates a new WindowsUpdate  folder.
+            /// </summary>
+            public WindowsUpdateAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WindowsUpdate", "/form[@title='Windows Update']", parentFolder, 30000, null, true, "640f37bf-e05e-4dc0-b013-c2ea88b71433", "")
+            {
+                _wutitleInfo = new RepoItemInfo(this, "WUTitle", "?/?/text[@automationid='wizardtitle']", 30000, null, "62d653cc-7d2f-4dac-8d03-85b437011a41");
+                _cancelInfo = new RepoItemInfo(this, "Cancel", "?/?/element[@class='CtrlNotifySink']/button[@text='Cancel']", 30000, null, "a5c061e0-b8ec-4323-8ba2-2a31536f4066");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("640f37bf-e05e-4dc0-b013-c2ea88b71433")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("640f37bf-e05e-4dc0-b013-c2ea88b71433")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WUTitle item.
+            /// </summary>
+            [RepositoryItem("62d653cc-7d2f-4dac-8d03-85b437011a41")]
+            public virtual Ranorex.Text WUTitle
+            {
+                get
+                {
+                    return _wutitleInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WUTitle item info.
+            /// </summary>
+            [RepositoryItemInfo("62d653cc-7d2f-4dac-8d03-85b437011a41")]
+            public virtual RepoItemInfo WUTitleInfo
+            {
+                get
+                {
+                    return _wutitleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Cancel item.
+            /// </summary>
+            [RepositoryItem("a5c061e0-b8ec-4323-8ba2-2a31536f4066")]
+            public virtual Ranorex.Button Cancel
+            {
+                get
+                {
+                    return _cancelInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Cancel item info.
+            /// </summary>
+            [RepositoryItemInfo("a5c061e0-b8ec-4323-8ba2-2a31536f4066")]
+            public virtual RepoItemInfo CancelInfo
+            {
+                get
+                {
+                    return _cancelInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The HardwareAndDevicesAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("525f2547-7ee7-43d8-b0a4-3eaf1a58ed86")]
+        public partial class HardwareAndDevicesAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _hardwareanddevicetitleInfo;
+            RepoItemInfo _cancelInfo;
+
+            /// <summary>
+            /// Creates a new HardwareAndDevices  folder.
+            /// </summary>
+            public HardwareAndDevicesAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("HardwareAndDevices", "/form[@title='Hardware and Devices']", parentFolder, 30000, null, true, "525f2547-7ee7-43d8-b0a4-3eaf1a58ed86", "")
+            {
+                _hardwareanddevicetitleInfo = new RepoItemInfo(this, "HardwareAndDeviceTitle", "?/?/text[@automationid='wizardtitle']", 30000, null, "fcd1db73-5bfc-4ba4-bd9f-8b22ae3339a9");
+                _cancelInfo = new RepoItemInfo(this, "Cancel", "?/?/element[@class='CtrlNotifySink']/button[@text='Cancel']", 30000, null, "56c6e94e-deea-4b40-aef7-95e33abf15a3");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("525f2547-7ee7-43d8-b0a4-3eaf1a58ed86")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("525f2547-7ee7-43d8-b0a4-3eaf1a58ed86")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HardwareAndDeviceTitle item.
+            /// </summary>
+            [RepositoryItem("fcd1db73-5bfc-4ba4-bd9f-8b22ae3339a9")]
+            public virtual Ranorex.Text HardwareAndDeviceTitle
+            {
+                get
+                {
+                    return _hardwareanddevicetitleInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HardwareAndDeviceTitle item info.
+            /// </summary>
+            [RepositoryItemInfo("fcd1db73-5bfc-4ba4-bd9f-8b22ae3339a9")]
+            public virtual RepoItemInfo HardwareAndDeviceTitleInfo
+            {
+                get
+                {
+                    return _hardwareanddevicetitleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Cancel item.
+            /// </summary>
+            [RepositoryItem("56c6e94e-deea-4b40-aef7-95e33abf15a3")]
+            public virtual Ranorex.Button Cancel
+            {
+                get
+                {
+                    return _cancelInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Cancel item info.
+            /// </summary>
+            [RepositoryItemInfo("56c6e94e-deea-4b40-aef7-95e33abf15a3")]
+            public virtual RepoItemInfo CancelInfo
+            {
+                get
+                {
+                    return _cancelInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WindowsNetworkDiagnosticsAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("a8fc49d6-7239-4a61-b235-f041fc97b1c0")]
+        public partial class WindowsNetworkDiagnosticsAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _headertitleInfo;
+            RepoItemInfo _windowsnetworkInfo;
+            RepoItemInfo _feedbackInfo;
+            RepoItemInfo _closeInfo;
+
+            /// <summary>
+            /// Creates a new WindowsNetworkDiagnostics  folder.
+            /// </summary>
+            public WindowsNetworkDiagnosticsAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WindowsNetworkDiagnostics", "/form[@title~'^Windows\\ Network\\ Diagnosti']", parentFolder, 30000, null, true, "a8fc49d6-7239-4a61-b235-f041fc97b1c0", "")
+            {
+                _headertitleInfo = new RepoItemInfo(this, "Headertitle", "?/?/text[@automationid='headertitle']", 30000, null, "9e3a9fe1-64f8-42c4-9d4c-2b394ad75b49");
+                _windowsnetworkInfo = new RepoItemInfo(this, "WindowsNetwork", "?/?/text[@automationid='wizardtitle']", 30000, null, "b809b99b-37e6-479e-b668-b96d223c6189");
+                _feedbackInfo = new RepoItemInfo(this, "FeedBack", "container/element[5]/?/?/container[@class='DirectUIHWND']/element[@instance='0']/button[@text~'^Give\\ feedback\\ on\\ this\\ tro']", 30000, null, "eeec0033-10ef-4ed7-be0f-04068f1cfd29");
+                _closeInfo = new RepoItemInfo(this, "Close", "?/?/element[@instance='1']/button[@text='Close']", 30000, null, "5387540c-0592-4190-afc1-5a1cd3a8d5ee");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("a8fc49d6-7239-4a61-b235-f041fc97b1c0")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("a8fc49d6-7239-4a61-b235-f041fc97b1c0")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Headertitle item.
+            /// </summary>
+            [RepositoryItem("9e3a9fe1-64f8-42c4-9d4c-2b394ad75b49")]
+            public virtual Ranorex.Text Headertitle
+            {
+                get
+                {
+                    return _headertitleInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Headertitle item info.
+            /// </summary>
+            [RepositoryItemInfo("9e3a9fe1-64f8-42c4-9d4c-2b394ad75b49")]
+            public virtual RepoItemInfo HeadertitleInfo
+            {
+                get
+                {
+                    return _headertitleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WindowsNetwork item.
+            /// </summary>
+            [RepositoryItem("b809b99b-37e6-479e-b668-b96d223c6189")]
+            public virtual Ranorex.Text WindowsNetwork
+            {
+                get
+                {
+                    return _windowsnetworkInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WindowsNetwork item info.
+            /// </summary>
+            [RepositoryItemInfo("b809b99b-37e6-479e-b668-b96d223c6189")]
+            public virtual RepoItemInfo WindowsNetworkInfo
+            {
+                get
+                {
+                    return _windowsnetworkInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FeedBack item.
+            /// </summary>
+            [RepositoryItem("eeec0033-10ef-4ed7-be0f-04068f1cfd29")]
+            public virtual Ranorex.Button FeedBack
+            {
+                get
+                {
+                    return _feedbackInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FeedBack item info.
+            /// </summary>
+            [RepositoryItemInfo("eeec0033-10ef-4ed7-be0f-04068f1cfd29")]
+            public virtual RepoItemInfo FeedBackInfo
+            {
+                get
+                {
+                    return _feedbackInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("5387540c-0592-4190-afc1-5a1cd3a8d5ee")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("5387540c-0592-4190-afc1-5a1cd3a8d5ee")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DHSArticleContentAreaAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("3e5beff7-2be4-4417-afa8-b9e02c5538ac")]
+        public partial class DHSArticleContentAreaAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _runappInfo;
+
+            /// <summary>
+            /// Creates a new DHSArticleContentArea  folder.
+            /// </summary>
+            public DHSArticleContentAreaAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DHSArticleContentArea", "/dom[@caption='{0}']", parentFolder, 30000, null, false, "3e5beff7-2be4-4417-afa8-b9e02c5538ac", "")
+            {
+                _runappInfo = new RepoItemInfo(this, "RunApp", ".//h4[#'RunApp']", 30000, null, "c057f68d-ba8b-4059-9b05-68216a182b95");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("3e5beff7-2be4-4417-afa8-b9e02c5538ac")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("3e5beff7-2be4-4417-afa8-b9e02c5538ac")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RunApp item.
+            /// </summary>
+            [RepositoryItem("c057f68d-ba8b-4059-9b05-68216a182b95")]
+            public virtual Ranorex.H4Tag RunApp
+            {
+                get
+                {
+                    return _runappInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RunApp item info.
+            /// </summary>
+            [RepositoryItemInfo("c057f68d-ba8b-4059-9b05-68216a182b95")]
+            public virtual RepoItemInfo RunAppInfo
+            {
+                get
+                {
+                    return _runappInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DHSMainWindowAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("75c708f6-fc02-48c9-96f8-667252e1487d")]
+        public partial class DHSMainWindowAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _keepyoursystemhealthyInfo;
+            RepoItemInfo _protectyourpcInfo;
+            RepoItemInfo _connectwirelessaccessInfo;
+            RepoItemInfo _setupawirelessInfo;
+            RepoItemInfo _texttbInfo;
+            RepoItemInfo _backbuttonInfo;
+
+            /// <summary>
+            /// Creates a new DHSMainWindow  folder.
+            /// </summary>
+            public DHSMainWindowAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DHSMainWindow", "/form[@name~'Dell Help & Support' and @classname='Window']", parentFolder, 30000, null, true, "75c708f6-fc02-48c9-96f8-667252e1487d", "")
+            {
+                _keepyoursystemhealthyInfo = new RepoItemInfo(this, "KeepYourSystemHealthy", "?/?/text[@automationid='content' and @name~'^Keeping\\ Your\\ System\\ Healt']", 30000, null, "9e2610c6-5d87-49d7-a81a-c8e38118965e");
+                _protectyourpcInfo = new RepoItemInfo(this, "ProtectYourPC", "?/?/list[@automationid='ArticleTitleList']/?/?/text[@name~'^Protecting\\ your\\ PC\\ from\\ m']", 30000, null, "be9d0750-3582-44f4-91ae-da9ea04d3834");
+                _connectwirelessaccessInfo = new RepoItemInfo(this, "ConnectWirelessAccess", "?/?/text[@automationid='content' and @name~'^Connecting\\ to\\ Wireless\\ an']", 30000, null, "2249c364-c760-43a7-9a22-ff584b36747e");
+                _setupawirelessInfo = new RepoItemInfo(this, "SetupAWireless", "?/?/list[@automationid='ArticleTitleList']/?/?/text[@name~'^Set\\ up\\ a\\ wireless\\ keyboar']", 30000, null, "f0302f3f-2ecf-4ff0-91e2-09e3ceb90223");
+                _texttbInfo = new RepoItemInfo(this, "TextTb", "?/?/list[@automationid='ArticleTitleList']/?/?/text[@name='Wireless troubleshooting']", 30000, null, "bb32baca-e5ea-46db-8a0f-d07a003fab44");
+                _backbuttonInfo = new RepoItemInfo(this, "BackButton", "element[@automationid='contentManagementControl']//picture[@automationid='CloseImage']", 30000, null, "9d3895f4-81cd-457d-b174-e9cdd96d6355");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("75c708f6-fc02-48c9-96f8-667252e1487d")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("75c708f6-fc02-48c9-96f8-667252e1487d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The KeepYourSystemHealthy item.
+            /// </summary>
+            [RepositoryItem("9e2610c6-5d87-49d7-a81a-c8e38118965e")]
+            public virtual Ranorex.Text KeepYourSystemHealthy
+            {
+                get
+                {
+                    return _keepyoursystemhealthyInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The KeepYourSystemHealthy item info.
+            /// </summary>
+            [RepositoryItemInfo("9e2610c6-5d87-49d7-a81a-c8e38118965e")]
+            public virtual RepoItemInfo KeepYourSystemHealthyInfo
+            {
+                get
+                {
+                    return _keepyoursystemhealthyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProtectYourPC item.
+            /// </summary>
+            [RepositoryItem("be9d0750-3582-44f4-91ae-da9ea04d3834")]
+            public virtual Ranorex.Text ProtectYourPC
+            {
+                get
+                {
+                    return _protectyourpcInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProtectYourPC item info.
+            /// </summary>
+            [RepositoryItemInfo("be9d0750-3582-44f4-91ae-da9ea04d3834")]
+            public virtual RepoItemInfo ProtectYourPCInfo
+            {
+                get
+                {
+                    return _protectyourpcInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ConnectWirelessAccess item.
+            /// </summary>
+            [RepositoryItem("2249c364-c760-43a7-9a22-ff584b36747e")]
+            public virtual Ranorex.Text ConnectWirelessAccess
+            {
+                get
+                {
+                    return _connectwirelessaccessInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ConnectWirelessAccess item info.
+            /// </summary>
+            [RepositoryItemInfo("2249c364-c760-43a7-9a22-ff584b36747e")]
+            public virtual RepoItemInfo ConnectWirelessAccessInfo
+            {
+                get
+                {
+                    return _connectwirelessaccessInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SetupAWireless item.
+            /// </summary>
+            [RepositoryItem("f0302f3f-2ecf-4ff0-91e2-09e3ceb90223")]
+            public virtual Ranorex.Text SetupAWireless
+            {
+                get
+                {
+                    return _setupawirelessInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SetupAWireless item info.
+            /// </summary>
+            [RepositoryItemInfo("f0302f3f-2ecf-4ff0-91e2-09e3ceb90223")]
+            public virtual RepoItemInfo SetupAWirelessInfo
+            {
+                get
+                {
+                    return _setupawirelessInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextTb item.
+            /// </summary>
+            [RepositoryItem("bb32baca-e5ea-46db-8a0f-d07a003fab44")]
+            public virtual Ranorex.Text TextTb
+            {
+                get
+                {
+                    return _texttbInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextTb item info.
+            /// </summary>
+            [RepositoryItemInfo("bb32baca-e5ea-46db-8a0f-d07a003fab44")]
+            public virtual RepoItemInfo TextTbInfo
+            {
+                get
+                {
+                    return _texttbInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BackButton item.
+            /// </summary>
+            [RepositoryItem("9d3895f4-81cd-457d-b174-e9cdd96d6355")]
+            public virtual Ranorex.Picture BackButton
+            {
+                get
+                {
+                    return _backbuttonInfo.CreateAdapter<Ranorex.Picture>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BackButton item info.
+            /// </summary>
+            [RepositoryItemInfo("9d3895f4-81cd-457d-b174-e9cdd96d6355")]
+            public virtual RepoItemInfo BackButtonInfo
+            {
+                get
+                {
+                    return _backbuttonInfo;
                 }
             }
         }

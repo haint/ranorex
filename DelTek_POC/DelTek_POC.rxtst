@@ -30,6 +30,11 @@ rxversion="6.0">
 			ref="d20cf749-2514-4f18-9b2a-01a60f352342"
 			type="UserCode"/>
 			<testmodule
+			name="CheckWindowsTroubleShooter"
+			id="9afcc16b-9113-4a0d-8bab-54ba459a37db"
+			ref="123676df-1d67-4f48-afee-c7522ae64e73"
+			type="Recording"/>
+			<testmodule
 			name="OpenDHS"
 			id="a0b1e50e-174e-4c86-bb87-0d6bb0b969e6"
 			ref="c539336e-e496-49c1-84cd-859e3e334ecb"
@@ -37,6 +42,19 @@ rxversion="6.0">
 			<testcase
 			name="DHS_MainUI"
 			id="ae892a61-ae51-4bb4-b9de-0a202ad44b41"/>
+			<testcase
+			name="DHS_WindowsTroubleshooter"
+			id="c6c6b9dd-0b6c-4812-b23e-6e1d0f51a68e"/>
+			<testmodule
+			name="OpenDHS"
+			id="d1747988-79b4-4dca-a6fd-8320f1a62ca9"
+			ref="c539336e-e496-49c1-84cd-859e3e334ecb"
+			type="Recording"/>
+			<testmodule
+			name="CloseDHS"
+			id="e0ae2735-aef0-4f26-9f6d-8909ecb40e6a"
+			ref="deb5c8a6-e8b3-4a56-b6ec-300b71a9757a"
+			type="Recording"/>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -58,6 +76,19 @@ rxversion="6.0">
 						name="ValidateFailure"
 						id="7a142505-ed83-4687-aaee-7ef7146614b6"/>
 					</testcase>
+					<testcase
+					name="DHS_WindowsTroubleshooter"
+					id="c6c6b9dd-0b6c-4812-b23e-6e1d0f51a68e">
+						<testmodule
+						name="OpenDHS"
+						id="d1747988-79b4-4dca-a6fd-8320f1a62ca9"/>
+						<testmodule
+						name="CheckWindowsTroubleShooter"
+						id="9afcc16b-9113-4a0d-8bab-54ba459a37db"/>
+						<testmodule
+						name="CloseDHS"
+						id="e0ae2735-aef0-4f26-9f6d-8909ecb40e6a"/>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -71,6 +102,8 @@ rxversion="6.0">
 			id="61175572-092d-4c19-a3fd-bd0add609622"/>
 			<testcase
 			id="ae892a61-ae51-4bb4-b9de-0a202ad44b41"/>
+			<testcase
+			id="c6c6b9dd-0b6c-4812-b23e-6e1d0f51a68e"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references/>

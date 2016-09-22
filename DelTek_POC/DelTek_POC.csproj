@@ -76,6 +76,18 @@
     <Compile Include="Program.cs">
       <id>3621942d-f388-48e9-8b48-5159b0f2b256</id>
     </Compile>
+    <Compile Include="TestModules\General\CheckWindowsTroubleShooter.cs">
+      <BoundTo>45ea8cb3-e7d2-44f7-a07d-df0140c9e1ee</BoundTo>
+      <DependentUpon>CheckWindowsTroubleShooter.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>91ebdacf-fc17-4776-93bc-a5afc3ba9552</id>
+    </Compile>
+    <Compile Include="TestModules\General\CheckWindowsTroubleShooter.UserCode.cs">
+      <BoundTo>45ea8cb3-e7d2-44f7-a07d-df0140c9e1ee</BoundTo>
+      <DependentUpon>CheckWindowsTroubleShooter.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b6809d86-ccbc-4736-ace5-76dff530d2b6</id>
+    </Compile>
     <Compile Include="TestModules\General\CloseDHS.cs">
       <id>9ec74038-7eb7-4b2a-b4eb-c647c52fd8ee</id>
       <BoundTo>17678ac8-bbd3-4d45-8857-bfc95481d75f</BoundTo>
@@ -118,6 +130,11 @@
       <id>f9897290-67b4-4736-97d6-cf64af66497b</id>
       <repoid>d4f4e210-bf6a-4d9b-a530-86a83a353ed8</repoid>
       <reporootid>5fdf545d-8175-4dfa-afd5-4019d1273998</reporootid>
+    </None>
+    <None Include="TestModules\General\CheckWindowsTroubleShooter.rxrec">
+      <BoundTo>f9897290-67b4-4736-97d6-cf64af66497b</BoundTo>
+      <id>45ea8cb3-e7d2-44f7-a07d-df0140c9e1ee</id>
+      <recordtableid>123676df-1d67-4f48-afee-c7522ae64e73</recordtableid>
     </None>
     <None Include="TestModules\General\CloseDHS.rxrec">
       <id>17678ac8-bbd3-4d45-8857-bfc95481d75f</id>

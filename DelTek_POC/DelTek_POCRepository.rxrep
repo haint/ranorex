@@ -6641,9 +6641,274 @@ g2g5OIhIbugRZMPMhqYsiHECrRWw4wS7rPP4V2tKsIIZ6vsLAN7KFwD0vRdUwI4JTmKCG34LSCYc
 			capname="text">
 				/form[@wpfnative='True' and @name='mainWindow']//container[@automationid='contentManagementControl']//text[@automationid='GetMoreSupportTxt']
 			</item>
+			<item
+			name="KeepYourSystemHealthy"
+			id="3455960c-4b82-4dd7-8fcc-0cba734daf6d"
+			searchtimeout="30000ms"
+			capname="button">
+				/form[@wpfnative='True' and @name='mainWindow']//element[@automationid='SixthCategory']/button
+			</item>
+			<item
+			name="ProtectYourPC"
+			id="f78ef668-4c62-43c7-8452-805c8b493883"
+			searchtimeout="30000ms"
+			capname="unknown">
+				/form[@wpfnative='True' and @name='mainWindow']/element
+			</item>
 			<basepath>
 				/form[@wpfnative='True' and @name='mainWindow']
 			</basepath>
+		</appfolder>
+		<appfolder
+		name="WindowsUpdate"
+		id="640f37bf-e05e-4dc0-b013-c2ea88b71433"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='Windows Update']"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="WUTitle"
+			id="62d653cc-7d2f-4dac-8d03-85b437011a41"
+			searchtimeout="30000ms"
+			capname="text"
+			refpath="/form[@title='Windows Update']/container[@class='DirectUIHWND']/text[@automationid='wizardtitle']"
+			addcaps="text,uiautomation,uiautomationvalue">
+				/form[@title='Windows Update']/?/?/text[@automationid='wizardtitle']
+			</item>
+			<item
+			name="Cancel"
+			id="a5c061e0-b8ec-4323-8ba2-2a31536f4066"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,nativewindow">
+				/form[@title='Windows Update']/?/?/element[@class='CtrlNotifySink']/button[@text='Cancel']
+			</item>
+			<basepath>
+				/form[@title='Windows Update']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAhlJREFUOE/tkV9IU1Ecx08GK/ojLbYJFmwiki8pw70EBoNC6cnqtflg
+VA/1UhHpS3MIqWEqmWsOkaymM1QsZWZ34ra77rY7NysrCDGnkto2aw7k2tP5du/NqJhBvfeFL+dw
+OJ/f9/zOj/wXIZHX0w+5aBRseBI+0Z4Qj4lACONcAMwLDs9ZP0a9PnFlMcgw2MR+yj8ZgckxK7uy
+5wOq+uZwfmAel54u4rLrI2rGV1DnT6A+uIoOZ19mAS8f3hK+IsJmbxzN4UWUOE6iirkPx/CIXEDR
+llUrw5I8PL9lstkTx6kndTi7dgwt0bewvUmj/9kYjIHC9FWhjGrsqsYlYBeZCIYy4Grx2e2RVZiS
+Rmi7itD5Lo3e2XWUB4phRgXOCUdRFiuk+d15d4j0Wb/C193fez4+cBEmoRRnxm6i6/061PYD0FhV
+OL10RKhI6pHTvyelaNu+TNwc99uHNQaSsL9KycnliWJUMvV4HBPgnN+AS5yG+tHeROlCAWpCNy6s
+UKoh0qh+JNf64mgILsA4ZcCJz3oY5vKhm8qFukcDR2wDTtcoDo4oUzpW9fUTpUUAtpEHg0O9DXfb
+0WSzie7ALdEWaysOswXQvczF/u59sDS3wny7BdesFuhn8qC8lz28Big35/AHNZHdOzsVKWkrJimY
+Zd6gdeeklbbsoS+UasWzLPne32iG0h0SlKT0kJT8T7AkqVe53wwR8g1JfZO3ZkAb4wAAAABJRU5E
+rkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		name="HardwareAndDevices"
+		id="525f2547-7ee7-43d8-b0a4-3eaf1a58ed86"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='Hardware and Devices']"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="HardwareAndDeviceTitle"
+			id="fcd1db73-5bfc-4ba4-bd9f-8b22ae3339a9"
+			searchtimeout="30000ms"
+			capname="text"
+			refpath="/form[@title='Hardware and Devices']/container[@class='DirectUIHWND']/text[@automationid='wizardtitle']"
+			addcaps="text,uiautomation,uiautomationvalue">
+				/form[@title='Hardware and Devices']/?/?/text[@automationid='wizardtitle']
+			</item>
+			<item
+			name="Cancel"
+			id="56c6e94e-deea-4b40-aef7-95e33abf15a3"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,nativewindow">
+				/form[@title='Hardware and Devices']/?/?/element[@class='CtrlNotifySink']/button[@text='Cancel']
+			</item>
+			<basepath>
+				/form[@title='Hardware and Devices']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAZhJREFUOE/FkUtOwlAUhhm5BDZg4lxnugt1E27DKEaNAbfgmzAATKDa
+EMRHQgIJKmEANFi0tCq0PCrvhvT3UOkNHaIDT/IN2nz9cnqv6/9nZ3ffzObLyObFmaHP3a4tz34P
+vxwKLFBgr2eaJmxyuRzi8TiOjk9xcn6BM4K75sFxV2i328wbwwKj0Qg2L+ILut0Ohm0DpVIJxUIB
+6XQakUjECk+7VmBzexfDocHQajVwNwkc8BvgolEosoJgMIhAIGAFpl0W6Pf7DLVanfwhoOs6JElC
+OHxpBWKxmMNlgU6ny7ADg8EArVYLckVGKPSzAc/zDpcFdP2LoVHANEckdFBvNFChDa6iHPx+Px0k
+53BZoNFsMcZnMDQMNJtNitUgimUkk0lE6TwSiVuHywKaVmfUa6p1XaqqQlEUCIIAoVhEKpWCz3eI
+tzeJ3r9bLgtU6SMbjRgf0MfHJyqyhAJd41g2aCuv14en5yxzWeCTVrVZW1/F4tISPB4PMo8ZlF9F
+yHIFyysruLt/cLhWgGaOmJ88zIqb+Mu4XN/01IE9AISIawAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		name="WindowsNetworkDiagnostics"
+		id="a8fc49d6-7239-4a61-b235-f041fc97b1c0"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='Windows Network Diagnostics']"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="Headertitle"
+			id="9e3a9fe1-64f8-42c4-9d4c-2b394ad75b49"
+			searchtimeout="30000ms"
+			capname="text"
+			refpath="/form[@title='Windows Network Diagnostics']/container[@class='DirectUIHWND']/text[@automationid='headertitle']"
+			addcaps="text,uiautomation,uiautomationvalue"
+			refimgid="32b3f399-792d-47eb-9705-eea99b756275">
+				/form[@title~'^Windows\ Network\ Diagnosti']/?/?/text[@automationid='headertitle']
+			</item>
+			<item
+			name="WindowsNetwork"
+			id="b809b99b-37e6-479e-b668-b96d223c6189"
+			searchtimeout="30000ms"
+			capname="text"
+			refpath="/form[@title='Windows Network Diagnostics']/container[@class='DirectUIHWND']/text[@automationid='wizardtitle']"
+			addcaps="text,uiautomation,uiautomationvalue">
+				/form[@title~'^Windows\ Network\ Diagnosti']/?/?/text[@automationid='wizardtitle']
+			</item>
+			<item
+			name="FeedBack"
+			id="eeec0033-10ef-4ed7-be0f-04068f1cfd29"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@title='Windows Network Diagnostics']/container[@class='DirectUIHWND']/element[@class='CtrlNotifySink' and @instance='0']/element[@class='XBabyHost']/container[@class='DirectUIHWND']/element[@class='CtrlNotifySink' and @instance='0']/button[@text='Give feedback on this troubleshooter']"
+			addcaps="button,nativewindow"
+			refimgid="f7aba676-c3cb-47ff-a258-4befc01e0099">
+				/form[@title~'^Windows\ Network\ Diagnosti']/container/element[5]/?/?/container[@class='DirectUIHWND']/element[@instance='0']/button[@text~'^Give\ feedback\ on\ this\ tro']
+			</item>
+			<item
+			name="Close"
+			id="5387540c-0592-4190-afc1-5a1cd3a8d5ee"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@title~'^Windows\ Network\ Diagnosti']/container/element[@class='CtrlNotifySink' and @instance='1']/button[@text='Close']"
+			addcaps="button,nativewindow">
+				/form[@title~'^Windows\ Network\ Diagnosti']/?/?/element[@instance='1']/button[@text='Close']
+			</item>
+			<basepath>
+				/form[@title~'^Windows\ Network\ Diagnosti']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAgxJREFUOE/Fz1tI01EcwPHzUBJF0YVG0ENgUCARVhD2VmEPRnTDXorw
+RYI0KGJPiQ+rrLWHDKJEMC/NwNnWVIrWbKmlbUTuotv+aptbkaXLy9S1YY19+7fSv0EE1kM/+HA4
+HM73cMT/nytaXcojhfBIgwsmX1eJS2W6OPMmMvyWA8ceIJbeRqw1ytqpqB+n6n6cWvNXKgzQ77NQ
+oB77HtgkB67FU6kUs3o8TrJzqli/uQKxqhahauZQYR/nLn5EfXWMwgsx7C/MbNltVwLJZJJZ2rI6
+xGIdYpEGsaIcseYuG7ZZ2JPvZN9xPzkH39DSbCIv3/YjoLmsZWbmy5yHTWYa6m/QaDBQVFxJ1tZq
+xDI9YrWBlZlmtudacdgdRCKflEAikfitUCiEzWajQV/J8zYTHR3tGIwuXnc70+dzgVjsM8FQOL3O
+Nz0dS7808C6Es9eHq8+PV5Ko0d/D75eUQJOlle5eD4GhITzhMOs+FLNX0pBXfYaM7hMIUy6iKJMu
+hxuffHFycopodFIJDASCVNXpuV6jJ/+OGlF5FNF5hOyREkTsFMJdwM7zh5H6B/D6/ASCg4xPRJXA
+6OjYL550PuP0rVKyGs+ypHw/y0t2sePmSdw9Pbh9Xt5PTGF95VQCI/I//6Sz6yVOlxvjYyuG1jYa
+Wx5hbn2qBIZHIn8lHZAnQ7bx52ahVLJ/GSG+Ab13NaB86RNsAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		name="DHSArticleContentArea"
+		id="3e5beff7-2be4-4417-afa8-b9e02c5538ac"
+		searchtimeout="30000ms"
+		capname="webdocument"
+		refpath="/dom[@caption='{0}']"
+		isrooted="True"
+		usecache="False">
+			<item
+			name="RunApp"
+			id="c057f68d-ba8b-4059-9b05-68216a182b95"
+			searchtimeout="30000ms"
+			capname="h4tag"
+			refpath="/dom[@caption='{0}']//h4[#'RunApp']"
+			addcaps="unknown,webelement,h4tag">
+				/dom[@caption='{0}']//h4[#'RunApp']
+			</item>
+			<basepath>
+				/dom[@caption='{0}']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		name="DHSMainWindow"
+		id="75c708f6-fc02-48c9-96f8-667252e1487d"
+		searchtimeout="30000ms"
+		capname="form"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="KeepYourSystemHealthy"
+			id="9e2610c6-5d87-49d7-a81a-c8e38118965e"
+			searchtimeout="30000ms"
+			capname="text"
+			addcaps="text,uiautomation">
+				/form[@name~'Dell Help &amp; Support' and @classname='Window']/?/?/text[@automationid='content' and @name~'^Keeping\ Your\ System\ Healt']
+			</item>
+			<item
+			name="ProtectYourPC"
+			id="be9d0750-3582-44f4-91ae-da9ea04d3834"
+			searchtimeout="30000ms"
+			capname="text"
+			addcaps="text,uiautomation">
+				/form[@name~'Dell Help &amp; Support' and @classname='Window']/?/?/list[@automationid='ArticleTitleList']/?/?/text[@name~'^Protecting\ your\ PC\ from\ m']
+			</item>
+			<item
+			name="ConnectWirelessAccess"
+			id="2249c364-c760-43a7-9a22-ff584b36747e"
+			searchtimeout="30000ms"
+			capname="text"
+			addcaps="text,uiautomation">
+				/form[@name~'Dell Help &amp; Support' and @classname='Window']/?/?/text[@automationid='content' and @name~'^Connecting\ to\ Wireless\ an']
+			</item>
+			<item
+			name="SetupAWireless"
+			id="f0302f3f-2ecf-4ff0-91e2-09e3ceb90223"
+			searchtimeout="30000ms"
+			capname="text"
+			addcaps="text,uiautomation">
+				/form[@name~'Dell Help &amp; Support' and @classname='Window']/?/?/list[@automationid='ArticleTitleList']/?/?/text[@name~'^Set\ up\ a\ wireless\ keyboar']
+			</item>
+			<item
+			name="TextTb"
+			id="bb32baca-e5ea-46db-8a0f-d07a003fab44"
+			searchtimeout="30000ms"
+			capname="text"
+			addcaps="text,uiautomation">
+				/form[@name~'Dell Help &amp; Support' and @classname='Window']/?/?/list[@automationid='ArticleTitleList']/?/?/text[@name='Wireless troubleshooting']
+			</item>
+			<item
+			name="BackButton"
+			id="9d3895f4-81cd-457d-b174-e9cdd96d6355"
+			searchtimeout="30000ms"
+			capname="picture"
+			addcaps="picture,uiautomation">
+				/form[@name~'Dell Help &amp; Support' and @classname='Window']/element[@automationid='contentManagementControl']//picture[@automationid='CloseImage']
+			</item>
+			<basepath>
+				/form[@name~'Dell Help &amp; Support' and @classname='Window']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAUJJREFUOE+lkz9Lw2AQxiM4OTs7+E1cxcVBRRz8Ci5O/oEOuoiDH8BF
+QURx1ahQ2kVEKdoOilBLRQcVqREbirb62N9BQk3TouSB5+Vy99zl7pLXceYOxpqsO/Ou/kVyyI1L
+7llw1bt4GD5j42vVGMmNOgdXs3qqfqj06qsvdWzExkcsqm8r0L+cVoBsqWIMQCyqDwtQHcHASkaF
+x3eNb19qeCNnxMZHDM2vTjiYjxYBwqH1M50/vGlqN6/RrQsdFV/MRwygDXfCwZLKFd+CvO3Oq2l6
+r6CZ/WvNujfWBT5iAG24ZDuaZFnMixj4nw15tbpGNnNWBBBDgzbI61gALGVuNbmTV+Pr2547Fogb
+AZzee7p6rprddYS4JZKQShe1dlI2u+sSYaLP2EoEAZgXBiAW1bcVoDot/v1XTnyZEl1nd+IHVUe1
+66GD67IAAAAASUVORK5CYII=
+			</icon>
 		</appfolder>
 		<basepath/>
 	</rootfolder>
