@@ -3,6 +3,11 @@
 rxversion="6.0">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testmodule
+			name="ValidateFailure"
+			id="2c6610e9-fc08-4623-a89f-ae23b12f2038"
+			ref="d20cf749-2514-4f18-9b2a-01a60f352342"
+			type="UserCode"/>
 			<testsuite
 			name="DelTek_POC"
 			id="309b2ec2-8e9b-40b3-b2df-0d6f16849677"
@@ -88,6 +93,9 @@ rxversion="6.0">
 						<testmodule
 						name="CloseDHS"
 						id="e0ae2735-aef0-4f26-9f6d-8909ecb40e6a"/>
+						<testmodule
+						name="ValidateFailure"
+						id="2c6610e9-fc08-4623-a89f-ae23b12f2038"/>
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -101,7 +109,7 @@ rxversion="6.0">
 			<testcase
 			id="61175572-092d-4c19-a3fd-bd0add609622"/>
 			<testcase
-			id="ae892a61-ae51-4bb4-b9de-0a202ad44b41"/>
+			id="c6c6b9dd-0b6c-4812-b23e-6e1d0f51a68e"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references/>
