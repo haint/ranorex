@@ -102,8 +102,6 @@ rxversion="6.0">
 			id="61175572-092d-4c19-a3fd-bd0add609622"/>
 			<testcase
 			id="ae892a61-ae51-4bb4-b9de-0a202ad44b41"/>
-			<testcase
-			id="c6c6b9dd-0b6c-4812-b23e-6e1d0f51a68e"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references/>
